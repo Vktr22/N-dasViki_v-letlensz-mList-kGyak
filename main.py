@@ -10,3 +10,7 @@ print("2.) feladat:")
 osszeg:int=feladatok.neg_szamok_osszege(lista)
 print(f"A negatív számok összege: {osszeg}")
 print("")
+
+print("3.) feladat:")
+atlag:float=feladatok.ottel_oszthat_atlag(lista)
+print(f"Az öttel osztható számok átlaga: {atlag}")

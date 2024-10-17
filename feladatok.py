@@ -25,5 +25,21 @@ def poz_szamok_szama(lista):
 def neg_szamok_osszege(lista):
     i:int=0
     negSzamOsszeg:int=0
-    while(lista[i]<len(lista)):
-        
+    while(i<len(lista)):
+        if(lista[i]<0):
+            negSzamOsszeg+=lista[i]
+        i+=1
+    return negSzamOsszeg
+
+
+def ottel_oszthat_atlag(lista):
+    i:int=0
+    ossz:float=0
+    db:int=0
+    while(i<len(lista)):
+        if (lista[i]%5==0):
+            ossz+=lista[i]
+            db+=1
+        i+=1
+    atl:float=ossz/db
+    return atl
